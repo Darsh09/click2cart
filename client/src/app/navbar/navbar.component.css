@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #008080; /* Teal background */
+  padding: 10px 20px;
+  color: white;
+  border-radius: 8px;
+  z-index: 1000; /* Ensures navbar stays on top */
+  position: relative; /* Use relative position to apply z-index */
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-button {
+  background-color: transparent; /* Keep it transparent to match the navbar */
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #FF6F61; /* Coral color for hover effect */
+  color: white;
+}
+
+.nav-button:focus {
+  outline: none;
+}
